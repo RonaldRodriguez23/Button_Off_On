@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+}
+
+.toggle-switch {
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    box-shadow: 0 0 4px red;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch.active {
+    background-color: green;
+    box-shadow: 0 0 8px yellowgreen;
+}
+
+.switch-circle {
+    width: 26px;
+    height: 26px;
+    background-color: #282c34;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.1s;
+}
+
+
+.toggle-switch.active .switch-circle {
+    left: 32px;
+}
